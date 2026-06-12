@@ -1,0 +1,617 @@
+[
+  {
+    "pk": "3855262898847984220",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 910,
+      "replies": 17,
+      "reposts": 31,
+      "quotes": 11,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3821195314716353342",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 0,
+      "replies": 265,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3900549570836980902",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 7,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3823970436556990973",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 115,
+      "replies": 5,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3887421798908555252",
+    "code": "DXy5YeYDe_0",
+    "taken_at": 1777636812,
+    "text": "運命の人は、実は2人いる。\n\n1人目は、\nあなたに「恋」を教える人。\n\n・嫉妬や不安が強くなる\n・好きすぎて離れたくない\n・感情が大きく揺れる\n・喧嘩しても忘れられない\n\n2人目は、",
+    "counts": {
+      "likes": 385,
+      "replies": 52,
+      "reposts": 10,
+      "quotes": 4,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "80126409612",
+      "username": "kanata.tsunagaru.renai"
+    },
+    "url": "https://www.threads.com/@kanata.tsunagaru.renai/post/DXy5YeYDe_0"
+  },
+  {
+    "pk": "3845003547495241703",
+    "code": "DVcMlrQkhfn",
+    "taken_at": 1772580162,
+    "text": "運命の人との恋愛で起こりがちなこと７つ\n\n① なぜか年の差がある（タイミングがズレてる）\n② 立場がシンプルじゃない（既婚・遠距離など）\n③ 動かない時間がやたら長い\n④ 前触れなく終わる瞬間がある\n⑤ 何年経っても心から消えない\n⑥ 根拠はないのに「また会う」と思ってる\n⑦ 理由は説明できないのに、どうしても好き",
+    "counts": {
+      "likes": 1151,
+      "replies": 40,
+      "reposts": 8,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "80175063205",
+      "username": "fujiko_mind"
+    },
+    "url": "https://www.threads.com/@fujiko_mind/post/DVcMlrQkhfn"
+  },
+  {
+    "pk": "3576308548351002764",
+    "code": "DGhma03p4iM",
+    "taken_at": 1740549223,
+    "text": "旦那を一生沼らせる妻の特徴❤️‍🔥\n結婚しても「ずっと愛される女」と「ただの家族になる女」に分かれる。\n\n結局、「自分を大切にしてくれる」「ずっと新鮮な魅力がある」妻には、男は一生ハマる。\n旦那を沼らせるのは、ちょっとした工夫と、余裕のある愛し方ね。\n\nじゃあ、旦那が一生離れられなくなる“沼妻”の特徴は？\n↓",
+    "counts": {
+      "likes": 43,
+      "replies": 1,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "70226783671",
+      "username": "runachan_re"
+    },
+    "url": "https://www.threads.com/@runachan_re/post/DGhma03p4iM"
+  },
+  {
+    "pk": "3804042273021272322",
+    "code": "DTKrErqAKEC",
+    "taken_at": 1767697198,
+    "text": "可愛いのに彼氏いない女あるある。\n\n・家から出ない\n・恋愛なくても人生楽しい\n・簡単に人を好きにならない\n・好きになると重め\n・追われる恋は合わない\n・そうこうしてるうちに恋愛が億劫",
+    "counts": {
+      "likes": 3139,
+      "replies": 25,
+      "reposts": 48,
+      "quotes": 5,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "79756135904",
+      "username": "mesuko.aisareonna"
+    },
+    "url": "https://www.threads.com/@mesuko.aisareonna/post/DTKrErqAKEC"
+  },
+  {
+    "pk": "3904017392645413168",
+    "code": "DYt2yJdk5kw",
+    "taken_at": 1779615161,
+    "text": "好きな人ができた瞬間に顔が変わる女の子がいる。肌が綺麗になって、目が輝いて、なんか雰囲気が柔らかくなって、周りから「最近いいことあった？」って言われる。でもこれ好きな人ができたからじゃなくて、それが",
+    "counts": {
+      "likes": 500,
+      "replies": 1,
+      "reposts": 4,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DYt2yJdk5kw"
+  },
+  {
+    "pk": "3809176336519549389",
+    "code": "DTc6bI5ElHN",
+    "taken_at": 1768309226,
+    "text": "カズレーザーさんの\n「恋はいっぱいしないと、1つ1つの恋にすごい価値があると思ってしまう。人はどこにでもいる人を好きになり、どこにでもいる人だったと気付き、冷める。それまでが楽しいので恋は沢山した方がいい。そうじゃないと、どこにでもいるって認められないままの人生で損する」\nって本質すぎ。どこにでもいる1人に依存せず、幸せな結婚を掴めるのはこういう思考🐰",
+    "counts": {
+      "likes": 3900,
+      "replies": 51,
+      "reposts": 124,
+      "quotes": 10,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74539076850",
+      "username": "usamii_bridal"
+    },
+    "url": "https://www.threads.com/@usamii_bridal/post/DTc6bI5ElHN"
+  },
+  {
+    "pk": "3848311026505467249",
+    "code": "DVn8n1IE8Vx",
+    "taken_at": 1772974445,
+    "text": "妻が好きすぎる夫が、\n毎日「え、妻かわいすぎる」って思った瞬間を\nそのまま投稿してるアカウントです。\n\nたぶん見てるうちに、ちょっと幸せな気持ちになります。",
+    "counts": {
+      "likes": 1770,
+      "replies": 37,
+      "reposts": 11,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "78426491138",
+      "username": "tsuma_sukisugiru"
+    },
+    "url": "https://www.threads.com/@tsuma_sukisugiru/post/DVn8n1IE8Vx"
+  },
+  {
+    "pk": "3766354260451690258",
+    "code": "DRExz6wgIcS",
+    "taken_at": 1763204437,
+    "text": "オンナ、はよ気付こな。\n\n・「この人以上の人おらん」の9割は勘違い\n・「これ逃したらしぬ」はただの気の迷い\n・「手放し上手」は「幸せ上手」\n・辛い失恋、1年後には99％忘れてる\n・我慢して恋愛するほどウチら暇ちゃう\n・男は地球上に35億、選び放題。\n\n「これしかない」って幻覚やでな。",
+    "counts": {
+      "likes": 1360,
+      "replies": 14,
+      "reposts": 22,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74987268271",
+      "username": "naniwa_tyan"
+    },
+    "url": "https://www.threads.com/@naniwa_tyan/post/DRExz6wgIcS"
+  },
+  {
+    "pk": "3912426617192743489",
+    "code": "DZLu0eHjoJB",
+    "taken_at": 1780617619,
+    "text": "好きな人からの、\n何気ない報告って強いです。\n\n「今仕事終わった」\n「今からお風呂入る」\n\nたったそれだけで、\n女の心は少し安心する。\n\n愛って、\n大きな言葉より\n日常に入れてもらえることで満たされる。",
+    "counts": {
+      "likes": 27,
+      "replies": 3,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "39772008036",
+      "username": "sakazuki_no_sakazuki"
+    },
+    "url": "https://www.threads.com/@sakazuki_no_sakazuki/post/DZLu0eHjoJB"
+  },
+  {
+    "pk": "3579168376374955681",
+    "code": "DGrwqzRJA6h",
+    "taken_at": 1740890141,
+    "text": "一途な人は本気で好きになると\n大好きな人フィルターがかかるので\n\n好きな人以外興味なくなるし\n好きな人以外見えなくなります\n\n同じ人いる？",
+    "counts": {
+      "likes": 622,
+      "replies": 27,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63277839817",
+      "username": "mujitu_kun"
+    },
+    "url": "https://www.threads.com/@mujitu_kun/post/DGrwqzRJA6h"
+  },
+  {
+    "pk": "3807606087902634875",
+    "code": "DTXVZA6DSN7",
+    "taken_at": 1768122038,
+    "text": "本当に大変なことです。\n「天照様をフォローしてから運が良い」と\nご報告が鳴り止みません。\n\n「体の調子が良くなった」「就活の内定が出た」\n「好きな人と復縁できた」「子を授かった」\n「臨時収入が入った」\n\n返信が追いつかないほどです。\nご縁の力、本当に恐ろしいほど感じております。￼",
+    "counts": {
+      "likes": 5475,
+      "replies": 76,
+      "reposts": 11,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": true,
+    "user": {
+      "pk": "65695767440",
+      "username": "amaterasu_333888"
+    },
+    "url": "https://www.threads.com/@amaterasu_333888/post/DTXVZA6DSN7"
+  },
+  {
+    "pk": "3793163268434057440",
+    "code": "DSkBeVGEljg",
+    "taken_at": 1766400320,
+    "text": "幸せな女の特徴\n\n・寝る。すぐ寝る。めちゃ寝る。\n・好きなものを好きな時に食べる\n・「まぁいつか」が口癖ギネス記録\n・LINVE既読スルーされても気づいてない\n・運のせいにするのが上手い\n・「抱かれる」より「抱いてあげる」意識\n・思ってもないのに「まじ幸せ」連呼\n・人の話8割聞いてない\n・リアクションは他の人の3倍\n・優められると伸びるタイプ\n・アタシの投稿にいいねが押せる",
+    "counts": {
+      "likes": 3724,
+      "replies": 21,
+      "reposts": 60,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "78278917316",
+      "username": "ao.ringochan"
+    },
+    "url": "https://www.threads.com/@ao.ringochan/post/DSkBeVGEljg"
+  },
+  {
+    "pk": "3904806528159605454",
+    "code": "DYwqNlLlGLO",
+    "taken_at": 1779709233,
+    "text": "ぶっちゃけ言うと、モテる女は\n「好きバレ」がクッソ上手い\n\n◼️残念な女\n・「会いたい会いたい」（圧）\n・「別に好きとかじゃない」（隠す）\n・「なんで返信くれないの？」（不満が先）\n・急に冷たくなる（駆け引き）\n・「好きになったら責任取ってよ？」（重い）\n\n→男側「恋愛しづら…」で終わる\n\n◼️モテる女 ↓",
+    "counts": {
+      "likes": 265,
+      "replies": 5,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "21622363691",
+      "username": "moteniki_2"
+    },
+    "url": "https://www.threads.com/@moteniki_2/post/DYwqNlLlGLO"
+  },
+  {
+    "pk": "3882816199504156542",
+    "code": "DXiiMLrk9d-",
+    "taken_at": 1777087782,
+    "text": "息子社会人3年目。\nさすがに4月から家にお金入れなさい、月1万円でいいから…\nと言っておいたら、さっき😳",
+    "counts": {
+      "likes": 32006,
+      "replies": 1401,
+      "reposts": 97,
+      "quotes": 7,
+      "views": null
+    },
+    "has_media": true,
+    "user": {
+      "pk": "68928511021",
+      "username": "lady_buuuuuuug"
+    },
+    "url": "https://www.threads.com/@lady_buuuuuuug/post/DXiiMLrk9d-"
+  },
+  {
+    "pk": "3778767597949792147",
+    "code": "DRw4RwMja-T",
+    "taken_at": 1764684222,
+    "text": "オンナへ\n会った時に幸せくれる男より\n離れてても不安にさせない男が優勝だからな\n絶対に間違えるな！！！",
+    "counts": {
+      "likes": 4397,
+      "replies": 59,
+      "reposts": 157,
+      "quotes": 14,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74767155782",
+      "username": "aco.renai.mentor"
+    },
+    "url": "https://www.threads.com/@aco.renai.mentor/post/DRw4RwMja-T"
+  },
+  {
+    "pk": "3807429627132043355",
+    "code": "DTWtRLAgOBb",
+    "taken_at": 1768101002,
+    "text": "マツコが言ってた。\n「どんなに好きになっても、何も抱えてない男とは恋愛しちゃダメ」\n\n“何も抱えてない”って、見た目が軽いとか遊んでるとか、そういう話じゃない。\n人生の責任も、痛みも、覚悟も、\n一度も自分の肩に乗せたことがない人ってこと。\n\nそういう人はね、\n都合が悪くなった瞬間に、恋もあなたも“置いていける”。\n失う怖さを知らないから。\n守る覚悟を育ててないから。\n\nじゃあ、恋愛で「何かを抱えてる男」ってどういうことか。",
+    "counts": {
+      "likes": 1723,
+      "replies": 30,
+      "reposts": 72,
+      "quotes": 10,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "77587493525",
+      "username": "amane_taroturanai"
+    },
+    "url": "https://www.threads.com/@amane_taroturanai/post/DTWtRLAgOBb"
+  },
+  {
+    "pk": "3838423811721638913",
+    "code": "DVE0h6zEbQB",
+    "taken_at": 1771795797,
+    "text": "木村拓哉さんの言葉に共感する。\n\n「彼氏がいない期間が長い人ってね、\nただ出会いがないんじゃなくて本気じゃない恋に時間を使いたくないだけなんだよ。」\n\n100%好きになれないなら付き合えない。\n中途半端に誰かの隣にいるくらいなら、一人でいたほうが心が安らぐ。\n\nこれ、ワガママでも何でもない。\nむしろすごく健全。\n\nだってその人たちは、",
+    "counts": {
+      "likes": 3388,
+      "replies": 14,
+      "reposts": 75,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "78571834007",
+      "username": "reito_renai_fukuen"
+    },
+    "url": "https://www.threads.com/@reito_renai_fukuen/post/DVE0h6zEbQB"
+  },
+  {
+    "pk": "3821966704180796237",
+    "code": "DUKWnfCERtN",
+    "taken_at": 1769833957,
+    "text": "付き合わなかったけど\n大好きだった人っている？",
+    "counts": {
+      "likes": 6772,
+      "replies": 587,
+      "reposts": 24,
+      "quotes": 10,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "80175063205",
+      "username": "fujiko_mind"
+    },
+    "url": "https://www.threads.com/@fujiko_mind/post/DUKWnfCERtN"
+  },
+  {
+    "pk": "3653241173604444719",
+    "code": "DKy633fhiov",
+    "taken_at": 1749720306,
+    "text": "一途な人は\n好きな人ができると\n好きな人フィルターがかかるので\n\n好きな人しかカッコイイって思わないし\n好きな人しか好きって思わなくなります\n\n同じ人いる？",
+    "counts": {
+      "likes": 1085,
+      "replies": 21,
+      "reposts": 12,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63277839817",
+      "username": "mujitu_kun"
+    },
+    "url": "https://www.threads.com/@mujitu_kun/post/DKy633fhiov"
+  },
+  {
+    "pk": "3865286166190905588",
+    "code": "DWkQUn7Clj0",
+    "taken_at": 1774998039,
+    "text": "男からグイグイきた恋愛で\n最終的に女のほうが執着してしまう。\nあれ、よく考えるとその男のことが好きなんじゃないのです。「自分を好きになって、動いてくれた」その事実に、依存しているだけ。\n選ばれた記憶に、溺れているだけ。\n相手が好きなのか、相手に好かれた自分が好きなのか。そこを混同したまま執着すると、\n\n一生、答えの出ない迷路を歩き続けます。​​​​​​​​​​​​​​​​",
+    "counts": {
+      "likes": 1645,
+      "replies": 32,
+      "reposts": 34,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "78939147712",
+      "username": "fumei_joshi"
+    },
+    "url": "https://www.threads.com/@fumei_joshi/post/DWkQUn7Clj0"
+  },
+  {
+    "pk": "3415016033797222754",
+    "code": "C9kkv08vzFi",
+    "taken_at": 1721321656,
+    "text": "男の人てなんでそんなに清楚系女子が好きなの？",
+    "counts": {
+      "likes": 31,
+      "replies": 19,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63447260505",
+      "username": "koskos.a"
+    },
+    "url": "https://www.threads.com/@koskos.a/post/C9kkv08vzFi"
+  },
+  {
+    "pk": "3808429348022837683",
+    "code": "DTaQlBpEuGz",
+    "taken_at": 1768220178,
+    "text": "楽しい人は楽しい事を考えて、つまらない人はつまらない事を考えて、イライラする人はイライラすることを考えているだけ。面白い事と楽しいことを常に考えるようにするといいだけ。",
+    "counts": {
+      "likes": 4410,
+      "replies": 15,
+      "reposts": 67,
+      "quotes": 4,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63252634453",
+      "username": "iidanobutaka"
+    },
+    "url": "https://www.threads.com/@iidanobutaka/post/DTaQlBpEuGz"
+  },
+  {
+    "pk": "3336242748775674433",
+    "code": "C5MtxqVPzJB",
+    "taken_at": 1711931149,
+    "text": "絶対に関わってはいけない人は\n「小さな嘘を平気でつく人」\n小さな嘘をつく人は\nだいたい大きな隠し事をしているから",
+    "counts": {
+      "likes": 1317,
+      "replies": 26,
+      "reposts": 85,
+      "quotes": 26,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63315786832",
+      "username": "haruki.kai"
+    },
+    "url": "https://www.threads.com/@haruki.kai/post/C5MtxqVPzJB"
+  },
+  {
+    "pk": "3892464195724694506",
+    "code": "DYEz5AXGNPq",
+    "taken_at": 1778237913,
+    "text": "好きな人から\n「今帰った」\nってLINEが来ると\n会えてないのに\nちょっと安心する。\n好きって\nこういうことなんだと思う。",
+    "counts": {
+      "likes": 1815,
+      "replies": 91,
+      "reposts": 17,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "64621649307",
+      "username": "nem.nem____"
+    },
+    "url": "https://www.threads.com/@nem.nem____/post/DYEz5AXGNPq"
+  },
+  {
+    "pk": "3911733178524744828",
+    "code": "DZJRJnCE7x8",
+    "taken_at": 1780534954,
+    "text": "女は脳死でこれやれ、ビビるほど美人になるぞ...\n\n・水は1日2リットル以上飲め\n・好きなものを食べられる日を決めなさい\n・おやつは素焼きナッツ食え\n・やりたいことは全部やれ、出会い増える\n・毎日有酸素運動しろ、おすすめは散歩\n・一人旅に出かけろ価値観変わる草津いいよ\n・ネガティヴ発言するたびスクワット20回やれ\n・早寝早起き朝ごはんをやりなさい\n・恋愛に振り回されるな\n・友人、家族を超絶大事にしろ\n・十割蕎麦、ヨーグルト、鶏胸肉食べろ！\n・私をフォローしとけ！！！（必須）\n・バッグは良いもの使え（毎日使うから気分↑）\n・湯船にちゃんと浸かれ\n・サウナに月2行け！！！全力で汗をかけ\n・ビオフェルミン飲め、腸内環境最強にしろ\n・腹八分目で押さえろ時間経つとお腹いっぱい\n・溺愛してくれる男と付き合え！（固定投稿使え）\n・イライラしたら踊り狂え！共に踊ろう\n・鏡見な？？？くっそ可愛いよあんた\n・私をフォローしなさい！（大事だから2回目）\n・寝る前のストレッチは絶対しろ！！\n\nどれか一つでもいいから今すぐやって！\n元々可愛い君がもっと可愛くなっちゃうぞ！！",
+    "counts": {
+      "likes": 1536,
+      "replies": 15,
+      "reposts": 28,
+      "quotes": 3,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DZJRJnCE7x8"
+  },
+  {
+    "pk": "3532320990044948732",
+    "code": "DEFUzm0SQj8",
+    "taken_at": 1735305497,
+    "text": "好きな人に彼女ができた！\n14ヶ月間の片思いおわった。たくさん泣いた。\nよく頑張った自分。おつかれさま。",
+    "counts": {
+      "likes": 4627,
+      "replies": 134,
+      "reposts": 3,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "68570583011",
+      "username": "to_avn_pao"
+    },
+    "url": "https://www.threads.com/@to_avn_pao/post/DEFUzm0SQj8"
+  },
+  {
+    "pk": "3832393819439172289",
+    "code": "DUvZd-3EwrB",
+    "taken_at": 1771076966,
+    "text": "匂いが好きな相手は\n「一緒に生きられる人」\n\n声が好きな相手は\n「安心して弱くなれる人」\n\n笑い方が好きな相手は",
+    "counts": {
+      "likes": 1639,
+      "replies": 42,
+      "reposts": 23,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "80210552484",
+      "username": "strategist_aru"
+    },
+    "url": "https://www.threads.com/@strategist_aru/post/DUvZd-3EwrB"
+  },
+  {
+    "pk": "3808276202726306733",
+    "code": "DTZtwd-EzOt",
+    "taken_at": 1768201922,
+    "text": "男に溺愛されやすい女の特徴って意外と単純で「一緒にいて楽しい」とか「金銭感覚が普通」とか「真面目」とか「癒し的な存在になってくれる」とか「かわいい」とか「いつもニコニコしてる」とか「ボケたらツッコんでくれる」とか結構単純なものが多いんだけど、ここに何より大事な要素があって、",
+    "counts": {
+      "likes": 365,
+      "replies": 4,
+      "reposts": 3,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DTZtwd-EzOt"
+  },
+  {
+    "pk": "3909873109230829408",
+    "code": "DZCqOCgjj9g",
+    "taken_at": 1780313217,
+    "text": "よく聞け。運命の人は、人生に3人いんだ。\n1人目は、お前さんに「恋」を教える人。誰かを本気で愛する苦しさと熱さを、体ごと教えてくれる。2人目は、お前さんに「愛」を教える人。そばにおるだけで安心できる温かさを、初めて知らせてくれる。そして最後の3人目は、",
+    "counts": {
+      "likes": 1227,
+      "replies": 14,
+      "reposts": 35,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "23595964438",
+      "username": "namubaa"
+    },
+    "url": "https://www.threads.com/@namubaa/post/DZCqOCgjj9g"
+  }
+]

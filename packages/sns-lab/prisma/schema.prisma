@@ -1,0 +1,246 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Account {
+  id          String   @id @default(cuid())
+  name        String
+  snsType     String   // "threads" | "x"
+  username    String
+  target      String?
+  worldview   String?
+  theme       String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  posts               Post[]
+  postTemplates       PostTemplate[]
+  series              Series[]
+  tags                Tag[]
+  winningPosts        WinningPost[]
+  contentIdeas        ContentIdea[]
+  competitorPosts         CompetitorPost[]
+  competitorAnalyses      CompetitorAnalysis[]
+  weeklyAnalyses          WeeklyAnalysis[]
+  improvementSuggestions  ImprovementSuggestion[]
+
+  @@map("accounts")
+}
+
+model PostTemplate {
+  id        String   @id @default(cuid())
+  accountId String
+  timeSlot  String   // "morning" | "noon" | "night1" | "night2"
+  promptText String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("post_templates")
+}
+
+model Series {
+  id          String   @id @default(cuid())
+  accountId   String
+  name        String
+  description String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  posts   Post[]
+
+  @@map("series")
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  accountId String
+  name      String
+  color     String   @default("#6366f1")
+  createdAt DateTime @default(now())
+
+  account  Account   @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  postTags PostTag[]
+
+  @@map("tags")
+}
+
+model Post {
+  id           String   @id @default(cuid())
+  accountId    String
+  seriesId     String?
+  content      String
+  postDate     DateTime
+  timeSlot     String   // "morning" | "noon" | "night1" | "night2"
+  status       String   @default("draft") // "draft" | "scheduled" | "posted"
+  isPosted     Boolean  @default(false)
+  patternType  Int?     // 1〜5
+  memo         String?
+  learningMemo String?
+  externalId   String?  // ThreadsのpkやXのid
+  externalUrl  String?  // 元投稿URL
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  account  Account      @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  series   Series?      @relation(fields: [seriesId], references: [id])
+  postTags PostTag[]
+  insights PostInsight[]
+
+  @@map("posts")
+}
+
+model PostTag {
+  postId String
+  tagId  String
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([postId, tagId])
+  @@map("post_tags")
+}
+
+model PostInsight {
+  id           String   @id @default(cuid())
+  postId       String
+  impressions  Int?
+  likes        Int?
+  saves        Int?
+  comments     Int?
+  reposts      Int?
+  followerGain Int?
+  followRate   Float?   // followerGain / impressions
+  saveRate     Float?   // saves / impressions
+  commentRate  Float?   // comments / impressions
+  likeRate     Float?   // likes / impressions
+  isViral      Boolean  @default(false) // 伸びた投稿フラグ
+  recordedAt   DateTime @default(now())
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@map("post_insights")
+}
+
+model WinningPost {
+  id                String   @id @default(cuid())
+  accountId         String
+  postId            String?  // 自分の投稿ならリンク
+  content           String
+  source            String   @default("own") // "own" | "competitor"
+  platform          String   @default("threads") // "threads" | "x"
+  followerGain      Int?
+  followRate        Float?
+  saveRate          Float?
+  commentRate       Float?
+  patternType       Int?
+  tagsJson          String?  // JSON array
+  structureAnalysis String?
+  memo              String?
+  createdAt         DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("winning_posts")
+}
+
+model ContentIdea {
+  id                String   @id @default(cuid())
+  accountId         String
+  content           String
+  url               String?
+  category          String?
+  insight           String?
+  structureAnalysis String?
+  memo              String?
+  status            String   @default("unused")    // "unused" | "used"
+  sourceType        String   @default("manual")    // "manual" | "generated" | "winning_variant"
+  generatedFrom     String?
+
+  createdAt         DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("content_ideas")
+}
+
+model CompetitorPost {
+  id          String   @id @default(cuid())
+  accountId   String
+  platform    String   @default("threads")  // "threads" | "x" | "other"
+  url         String?
+  content     String
+  authorName  String?
+  memo        String?
+  analysis    String?
+  savedAt     DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("competitor_posts")
+}
+
+model CompetitorAnalysis {
+  id               String   @id @default(cuid())
+  accountId        String
+  analysisDate     DateTime @default(now())
+  platform         String   // "threads" | "x" | "manual"
+  summary          String?
+  winningHooksJson String?
+  winningCtasJson  String?
+  themesJson       String?
+  emotionsJson     String?
+  rawDataJson      String?
+  createdAt        DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("competitor_analyses")
+}
+
+model ImprovementSuggestion {
+  id                  String   @id @default(cuid())
+  accountId           String
+  weeklyAnalysisId    String?
+  doThemesJson        String?
+  avoidThemesJson     String?
+  followPostsJson     String?
+  savePostsJson       String?
+  experimentPostsJson String?
+  createdAt           DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("improvement_suggestions")
+}
+
+model WeeklyAnalysis {
+  id                     String   @id @default(cuid())
+  accountId              String
+  weekStart              DateTime
+  weekEnd                DateTime
+  winningThemesJson      String?
+  losingThemesJson       String?
+  winningHooksJson       String?
+  losingHooksJson        String?
+  winningStructuresJson  String?
+  bestTimeSlotsJson      String?
+  winningCtasJson        String?
+  nextWeekThemesJson     String?
+  nextWeekAvoidJson      String?
+  improvementSuggestions String?
+  createdAt              DateTime @default(now())
+
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@map("weekly_analyses")
+}

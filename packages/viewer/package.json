@@ -1,0 +1,10 @@
+{
+  "name": "viewer",
+  "version": "0.1.0",
+  "description": "SNS research data viewer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

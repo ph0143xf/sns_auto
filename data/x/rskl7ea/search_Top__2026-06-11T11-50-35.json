@@ -1,0 +1,514 @@
+{
+  "rawQuery": "恋愛 女性 男性 あるある",
+  "product": "Top",
+  "sort": "likes",
+  "filters": {
+    "minFollowers": 0,
+    "minLikes": 5000,
+    "minViews": 0
+  },
+  "tweets": [
+    {
+      "id": "1952573193279156676",
+      "created_at": "Tue Aug 05 03:31:40 +0000 2025",
+      "text": "たまには女性に向けて「男性と恋愛するとき重要な知識」でも話すか\n\n男女の恋愛における大きな差として「女性は男性の一番調子の良い状態を評価するけど、男性は女性の一番調子の悪い状態を評価する」という点だ（続く",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 64062,
+      "reply_count": 277,
+      "retweet_count": 3606,
+      "quote_count": 2765,
+      "bookmark_count": 24980,
+      "view_count": 20040293,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "2910013908",
+        "screen_name": "satetu4401",
+        "name": "砂鉄",
+        "followers_count": 120120,
+        "following_count": 7,
+        "verified": false,
+        "is_blue_verified": false
+      }
+    },
+    {
+      "id": "2064308113231253975",
+      "created_at": "Tue Jun 09 11:26:21 +0000 2026",
+      "text": "永野芽郁は同性ウケは悪く、男性ウケは非常に良かったって噂あるけど\n\n多部未華子の表情を見て察した https://t.co/EuZciIw35U",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 41593,
+      "reply_count": 554,
+      "retweet_count": 804,
+      "quote_count": 84,
+      "bookmark_count": 1462,
+      "view_count": 3356119,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HKXlSd0bIAAliDl.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "738040274673229824",
+        "screen_name": "tanatana5252",
+        "name": "忘れられない動画",
+        "followers_count": 533939,
+        "following_count": 1796,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063051288011743716",
+      "created_at": "Sat Jun 06 00:12:11 +0000 2026",
+      "text": "4年間友達の子恋愛には発展しない一言貰ったので安心してください&gt;  ̫ &lt; https://t.co/Soh49GfhMi",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 32479,
+      "reply_count": 43,
+      "retweet_count": 163,
+      "quote_count": 52,
+      "bookmark_count": 790,
+      "view_count": 1766525,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HKFuNlLagAA_07D.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "1970452682889736193",
+        "screen_name": "r31d8",
+        "name": "ひめ",
+        "followers_count": 339,
+        "following_count": 60,
+        "verified": false,
+        "is_blue_verified": false
+      }
+    },
+    {
+      "id": "2062570827175059569",
+      "created_at": "Thu Jun 04 16:23:00 +0000 2026",
+      "text": "男性に質問です\n\nどれだけ恋人、奥さんのことが好きでも。\n絶対にバレない状況で自分史上1番レベルのタイプな人に言い寄られたら、ワンナイトしちゃいますか？",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 12301,
+      "reply_count": 877,
+      "retweet_count": 258,
+      "quote_count": 661,
+      "bookmark_count": 1779,
+      "view_count": 5711127,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "2227579910",
+        "screen_name": "hbyte_01",
+        "name": "みみ日常",
+        "followers_count": 38761,
+        "following_count": 104,
+        "verified": false,
+        "is_blue_verified": false
+      }
+    },
+    {
+      "id": "2064293011761275217",
+      "created_at": "Tue Jun 09 10:26:21 +0000 2026",
+      "text": "本当にキツいのは「虐待された過去」より\n「あ、自分の性格とか恋愛とか生きづらさ全部\nここ影響してんだ..」って後から気づく瞬間な",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 10610,
+      "reply_count": 35,
+      "retweet_count": 1040,
+      "quote_count": 149,
+      "bookmark_count": 817,
+      "view_count": 476335,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1869318936388608000",
+        "screen_name": "p_sama1616",
+        "name": "限界がんこちゃん",
+        "followers_count": 30212,
+        "following_count": 3620,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063415915778379800",
+      "created_at": "Sun Jun 07 00:21:05 +0000 2026",
+      "text": "今日好き、未成年のおままごと恋愛と舐めてたけど、現実の残酷さを伝える教育番組として有能過ぎるw https://t.co/2md5AxGAye",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 10345,
+      "reply_count": 103,
+      "retweet_count": 370,
+      "quote_count": 129,
+      "bookmark_count": 623,
+      "view_count": 2681823,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HKK5zNNbEAAS-qN.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "1846343528911138816",
+        "screen_name": "casperrobb55579",
+        "name": "恋ツイ図書館",
+        "followers_count": 13016,
+        "following_count": 792,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2064658259991200078",
+      "created_at": "Wed Jun 10 10:37:43 +0000 2026",
+      "text": "男からグイグイきた恋愛で最終的に女の方が執着するのって、その男が好きなんじゃなくて自分を好きになって行動してくれた事実と幸福感に依存してただけだったと気づいて一瞬で醒める。好きだったのは相手じゃなくて「選ばれた自分」だった。これに気づいた時が本当の大人になる瞬間。",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 9321,
+      "reply_count": 58,
+      "retweet_count": 800,
+      "quote_count": 202,
+      "bookmark_count": 1861,
+      "view_count": 509411,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "2040252685056942080",
+        "screen_name": "Sekumi1111",
+        "name": "Sekumi",
+        "followers_count": 3576,
+        "following_count": 18,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063962398290313641",
+      "created_at": "Mon Jun 08 12:32:36 +0000 2026",
+      "text": "これね\n一回でもえっちしちゃうと\n一定の好感があれば母性と好きが溢れて\n沼になるのよ。\n女性側の意見より。",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": true,
+      "favorite_count": 8753,
+      "reply_count": 48,
+      "retweet_count": 276,
+      "quote_count": 51,
+      "bookmark_count": 3381,
+      "view_count": 2816929,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1872130156061483008",
+        "screen_name": "riobon1111",
+        "name": "こきんちゃん",
+        "followers_count": 7493,
+        "following_count": 922,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063594748431278533",
+      "created_at": "Sun Jun 07 12:11:42 +0000 2026",
+      "text": "恋愛ってまじでタイミングが9割の気がする",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 7757,
+      "reply_count": 123,
+      "retweet_count": 316,
+      "quote_count": 98,
+      "bookmark_count": 372,
+      "view_count": 666186,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1806174136081018880",
+        "screen_name": "twf003",
+        "name": "ゆうな",
+        "followers_count": 2890,
+        "following_count": 1643,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063449112993763628",
+      "created_at": "Sun Jun 07 02:33:00 +0000 2026",
+      "text": "キスとかハグだけで勃っちゃう男性は、性格めちゃくちゃ素直で、仕事も前向きで、デートになると前の日からソワソワしはじめて、結婚した後も毎日好きって言ってくれて、スタバ行くとカフェモカ、ミルク母乳変更にして、子供出来たらすぐ家に帰ってくるって思ってる。異論は認める",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 7519,
+      "reply_count": 138,
+      "retweet_count": 198,
+      "quote_count": 123,
+      "bookmark_count": 1083,
+      "view_count": 1294628,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1383306200905773063",
+        "screen_name": "kuriko7719",
+        "name": "クリ子",
+        "followers_count": 182862,
+        "following_count": 79,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063530322508358114",
+      "created_at": "Sun Jun 07 07:55:42 +0000 2026",
+      "text": "男性芸人、男性アイドル、男性俳優を1人ずつ混ぜました。\n\n誰だか分かった？ https://t.co/9DCWC3ZHbf",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 7336,
+      "reply_count": 2454,
+      "retweet_count": 367,
+      "quote_count": 1322,
+      "bookmark_count": 1345,
+      "view_count": 12917555,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HKMh5EcaIAAdqff.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "738040274673229824",
+        "screen_name": "tanatana5252",
+        "name": "忘れられない動画",
+        "followers_count": 533939,
+        "following_count": 1796,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2062498301396861123",
+      "created_at": "Thu Jun 04 11:34:49 +0000 2026",
+      "text": "結局のところ恋愛なんてLINEをすぐ返してくれる人が愛してくれてるし、会いたいって言えばすぐ会いに来てくれる人が大事にしてくれるんよな。会えない時間が愛を育むとか寂しさは愛してる証拠とかそんな綺麗事はどうでも良いし、寂しい時に抱きしめてくれないような奴ならさっさと切り捨てた方が良い。",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 7309,
+      "reply_count": 31,
+      "retweet_count": 623,
+      "quote_count": 105,
+      "bookmark_count": 717,
+      "view_count": 410027,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1094677033148284933",
+        "screen_name": "Tatarianaster_7",
+        "name": "せったーくん",
+        "followers_count": 64259,
+        "following_count": 41,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2064216536492150974",
+      "created_at": "Tue Jun 09 05:22:28 +0000 2026",
+      "text": "男性脳は猫に見えて、女性脳は... https://t.co/o80POpRyuB",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 6258,
+      "reply_count": 784,
+      "retweet_count": 193,
+      "quote_count": 481,
+      "bookmark_count": 791,
+      "view_count": 3988891,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HKWSAAZbgAAiv5P.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "1750856844397137920",
+        "screen_name": "buzz_video_buzz",
+        "name": "エビバディ動画",
+        "followers_count": 41480,
+        "following_count": 3921,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2062498654376894911",
+      "created_at": "Thu Jun 04 11:36:13 +0000 2026",
+      "text": "女性の平均身長と178cmのｳｫﾄｺを比べるとこんな感じなんだけど、\nハグは視線の感じがﾄｩﾝｸ──✨️だし、\nツーショットするときもこんなに屈んでくれててもうﾄｩﾝｸ──✨️ https://t.co/vMHoE61mmk",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": true,
+      "favorite_count": 6107,
+      "reply_count": 42,
+      "retweet_count": 447,
+      "quote_count": 536,
+      "bookmark_count": 1290,
+      "view_count": 1214624,
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HJ93lkZaAAAVvsR.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HJ93lkZaIAAU7js.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HJ93lkYbkAE4ynG.jpg"
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HJ93lkdawAAn6AN.jpg"
+        }
+      ],
+      "hashtags": [],
+      "user": {
+        "id": "1746393380274524160",
+        "screen_name": "qwertyaz111",
+        "name": "ｽﾃ｡",
+        "followers_count": 16450,
+        "following_count": 684,
+        "verified": false,
+        "is_blue_verified": false
+      }
+    },
+    {
+      "id": "2064716126240784468",
+      "created_at": "Wed Jun 10 14:27:39 +0000 2026",
+      "text": "いいな感じだなと思っていた男性が、\nフォロワー1桁の鍵垢女と繋がってたら、\nそいつは恋愛対象外です。",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 5904,
+      "reply_count": 31,
+      "retweet_count": 405,
+      "quote_count": 316,
+      "bookmark_count": 410,
+      "view_count": 497706,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1924080638845743104",
+        "screen_name": "0Ribon0914",
+        "name": "ྀིりぼん。",
+        "followers_count": 2773,
+        "following_count": 1255,
+        "verified": false,
+        "is_blue_verified": false
+      }
+    },
+    {
+      "id": "1471801374015107073",
+      "created_at": "Fri Dec 17 11:16:06 +0000 2021",
+      "text": "恋愛が上手くいかない女性は「スマートか」「刺激的か」「何をしてくれるか」を基準に付き合う男性を選びます。恋愛が上手くいく女性は「素直で誠実か」「穏やかか」「何をしないか」を基準に付き合う男性を選びます。",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 5819,
+      "reply_count": 11,
+      "retweet_count": 597,
+      "quote_count": 76,
+      "bookmark_count": 298,
+      "view_count": 0,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1563015132",
+        "screen_name": "misiru_",
+        "name": "見知らぬミシル",
+        "followers_count": 149511,
+        "following_count": 276,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "2063954473069039755",
+      "created_at": "Mon Jun 08 12:01:07 +0000 2026",
+      "text": "正直に言うと、\n\n相性が良い男性と出会った女性には、\nよく現れる特徴があります。\n\nその特徴は、",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 5378,
+      "reply_count": 295,
+      "retweet_count": 116,
+      "quote_count": 33,
+      "bookmark_count": 1646,
+      "view_count": 4837157,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "36756528",
+        "screen_name": "drirrinaldi",
+        "name": "紫苑@占い師🕊️",
+        "followers_count": 4897,
+        "following_count": 554,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    }
+  ],
+  "users": []
+}

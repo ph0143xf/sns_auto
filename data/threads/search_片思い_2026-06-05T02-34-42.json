@@ -1,0 +1,652 @@
+[
+  {
+    "pk": "3798805855295653445",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 61,
+      "replies": 4,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3901649470060636114",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 63,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3875433247275157680",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 2,
+      "replies": 3,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3883877015833732373",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 49,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3704657390587850663",
+    "code": null,
+    "taken_at": null,
+    "text": null,
+    "counts": {
+      "likes": 14,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": null,
+    "url": null
+  },
+  {
+    "pk": "3654369573740622086",
+    "code": "DK27cQAzjEG",
+    "taken_at": 1749854822,
+    "text": "この世界に片思いは存在しません。\nもしあなたがよくある人を思い出すなら、それはその人もあなたを頻繁に思い出しているということです。\n量子力学の理論によれば、どの二つの粒子にも時空を超えたつながりがあり、ある粒子の属性が変化すると、数千万光年離れていても、もう一つの粒子はその変化に連動して変化します。",
+    "counts": {
+      "likes": 927,
+      "replies": 30,
+      "reposts": 17,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "69659457238",
+      "username": "ikukomaruo"
+    },
+    "url": "https://www.threads.com/@ikukomaruo/post/DK27cQAzjEG"
+  },
+  {
+    "pk": "3876961504507554276",
+    "code": "DXNu_KECWnk",
+    "taken_at": 1776389848,
+    "text": "まってまってまって！！\nここへきて、ど本命（38年片思い中）から超〜久々にLINEきた！！！しかもお誘い！！！\n（4/25！もう私50歳なってる🤣）",
+    "counts": {
+      "likes": 4466,
+      "replies": 136,
+      "reposts": 12,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": true,
+    "user": {
+      "pk": "39725058159",
+      "username": "lunatick_love"
+    },
+    "url": "https://www.threads.com/@lunatick_love/post/DXNu_KECWnk"
+  },
+  {
+    "pk": "3833586592381086967",
+    "code": "DUzorHOkyz3",
+    "taken_at": 1771219155,
+    "text": "とんでもない片思いが実った人の話聞きたい",
+    "counts": {
+      "likes": 289,
+      "replies": 10,
+      "reposts": 3,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DUzorHOkyz3"
+  },
+  {
+    "pk": "3910643115673929375",
+    "code": "DZFZTG5Ekaf",
+    "taken_at": 1780405009,
+    "text": "職場の後輩に片思いして、都合の良い関係になってしまいズルズルと4年ほど。恋愛も仕事も今後のことを考えて転職を決意。7年間勤めてきた会社を辞め、彼とも会わなくてすむ！！！そしてついにLINEをブロ削した！！！！！！ぜっっったい今後も意味なくLINEしちゃう自分がいるのが分かってたから！！！その前に！！！！！もう会うことも連絡することもない！！！LINE来てないかな…って無駄な期待もしなくてすむ！！！！！！解放された！！！！！褒めてー！！！！！！",
+    "counts": {
+      "likes": 10523,
+      "replies": 143,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74193112511",
+      "username": "pipi_y22"
+    },
+    "url": "https://www.threads.com/@pipi_y22/post/DZFZTG5Ekaf"
+  },
+  {
+    "pk": "3886641997842250317",
+    "code": "DXwIE4CgHpN",
+    "taken_at": 1777543853,
+    "text": "これガチなんやけど。\nこれやるだけで片思いの【あの人】からLINEが来た。\n恋愛奥手で30年非リア、友達0やった私でもできた。あんたでもできるはず。\n\nこのやり方知っておきたい人おる？\nいいね30超えたらだすわ",
+    "counts": {
+      "likes": 292,
+      "replies": 4,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "45072194299",
+      "username": "bakusui.en"
+    },
+    "url": "https://www.threads.com/@bakusui.en/post/DXwIE4CgHpN"
+  },
+  {
+    "pk": "3892187767384537455",
+    "code": "DYD1CcaE3lv",
+    "taken_at": 1778204960,
+    "text": "片思いが長い女の子って全員同じことやってる。「今日の返信の速さどういう意味だろう」「インスタのストーリー見てくれたか確認する」「返信がないのが気になる」「好きな食べ物を覚えて話題にする」「偶然を装って会いに行く」全部やってるのに進展しない。なんで進展しないかわかる？それが",
+    "counts": {
+      "likes": 68,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DYD1CcaE3lv"
+  },
+  {
+    "pk": "3532320990044948732",
+    "code": "DEFUzm0SQj8",
+    "taken_at": 1735305497,
+    "text": "好きな人に彼女ができた！\n14ヶ月間の片思いおわった。たくさん泣いた。\nよく頑張った自分。おつかれさま。",
+    "counts": {
+      "likes": 4627,
+      "replies": 134,
+      "reposts": 3,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "68570583011",
+      "username": "to_avn_pao"
+    },
+    "url": "https://www.threads.com/@to_avn_pao/post/DEFUzm0SQj8"
+  },
+  {
+    "pk": "3879268122137492597",
+    "code": "DXV7c3IgHx1",
+    "taken_at": 1776664818,
+    "text": "これやばいかも、、、\n\n毎晩やってる「あること」をやめただけで、片思いのあの人からLINEが来るようになってしまった、\n\n正直、出すか迷ってる、、、\n\n気になる人アラサー・アラフォー片思い悩み中の人いる？\nいいね30超えたら公開するか〜",
+    "counts": {
+      "likes": 111,
+      "replies": 1,
+      "reposts": 0,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "45072194299",
+      "username": "bakusui.en"
+    },
+    "url": "https://www.threads.com/@bakusui.en/post/DXV7c3IgHx1"
+  },
+  {
+    "pk": "3842196063059665781",
+    "code": "DVSOPZoE2N1",
+    "taken_at": 1772245484,
+    "text": "好きだけど離れる選択を取らなきゃならない時はどんな人にだってやってくる。片思いが実らなかった時、付き合っていても雑に扱われたり、こっそり浮気されていたり。この時に自分の気持ちは「まだ好き」「でも好き」が大きいと思う。でもここを乗り越えて「別れる、離れる」選択を取れた女はガチで強い。1人の男に執着してたら時間がどんどん無駄になる。強い女は、",
+    "counts": {
+      "likes": 257,
+      "replies": 1,
+      "reposts": 2,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63404821099",
+      "username": "kyoujya_re"
+    },
+    "url": "https://www.threads.com/@kyoujya_re/post/DVSOPZoE2N1"
+  },
+  {
+    "pk": "3853930531758611601",
+    "code": "DV76WZOgRyR",
+    "taken_at": 1773644342,
+    "text": "3年片思いしとったけど、「彼女できた😶」ていわれて「え？！！おめでとう！！」て笑顔でいえた私を誰か褒めてください",
+    "counts": {
+      "likes": 15998,
+      "replies": 116,
+      "reposts": 4,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "79974868281",
+      "username": "you_are_kuma"
+    },
+    "url": "https://www.threads.com/@you_are_kuma/post/DV76WZOgRyR"
+  },
+  {
+    "pk": "3840376959918599015",
+    "code": "DVLwn9ziutn",
+    "taken_at": 1772028630,
+    "text": "引き寄せって本当にあるんだなって確信した瞬間は、3年間の片思いがまさかの両思いにひっくり返った時。どうやったのか、　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　　　　　　\n今だけ内緒で話すけど、あの頃は相手の反応も薄くて、脈なしにしか見えなくて、正直ちょっと諦めかけてたんだよね。でもある日ふと「もう好かれてる側の自分で生きてみよう」と思ったんだ。\n\nまだ何も起きてないのに、心の中ではすでに付き合っている前提で過ごした。そしたら不思議なくらい流れが変わった。普段なら既読スルーされるタイミングで返信が返ってきたり、向こうから誘うような言葉が増えたり、偶然会う回数まで増えていったんだ。\n\n流れがひとつ動くと、そこから恋愛の展開が一気に連続するんだよね。気づいたら「こっちが追っていた恋」が「向こうが気にする恋」にひっくり返ってたよ。\n\n計算じゃないし、小細工でもないし、駆け引きすらしていない。ただ「好かれている側の自分」に意図を置いた瞬間から、相手の態度も、言葉も、温度も変わっていったんだと思う。\n\n恋愛って奇跡じゃなくて、",
+    "counts": {
+      "likes": 229,
+      "replies": 1,
+      "reposts": 2,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "77924417389",
+      "username": "supirukun"
+    },
+    "url": "https://www.threads.com/@supirukun/post/DVLwn9ziutn"
+  },
+  {
+    "pk": "3166272438244577188",
+    "code": "Cvw3AHHrY-k",
+    "taken_at": 1691669109,
+    "text": "【沼った片思いあるある】\n\n会う前\n\n｢もう好きでいるの辞めよう。\n勝手に期待して勝手にヘコむし疲れた｣\n\n会った時\n｢はい好き×100｣\n\nなんでなの？？",
+    "counts": {
+      "likes": 1531,
+      "replies": 4,
+      "reposts": 36,
+      "quotes": 11,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63403918575",
+      "username": "20.rand"
+    },
+    "url": "https://www.threads.com/@20.rand/post/Cvw3AHHrY-k"
+  },
+  {
+    "pk": "3892467915970692206",
+    "code": "DYE0vJHCcRu",
+    "taken_at": 1778238356,
+    "text": "男ってね、本気になるほど自分の行動で一喜一憂されるのがイッチバン傷つくのね。逆に言うと、少しも動じないだけで勝手に『ボクのお姫さま』って思ってもらえるの！ここ超大事だから、女の子には絶対に最後まで読んで欲しいんだけど、",
+    "counts": {
+      "likes": 286,
+      "replies": 7,
+      "reposts": 3,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74767155782",
+      "username": "aco.renai.mentor"
+    },
+    "url": "https://www.threads.com/@aco.renai.mentor/post/DYE0vJHCcRu"
+  },
+  {
+    "pk": "3892467916675326096",
+    "code": "DYE0vJxCaCQ",
+    "taken_at": 1778238356,
+    "text": "男という生き物は、彼女が大切だからこそ\n一喜一憂されると、\n「俺がダメなんだ」「俺の行動が悪かったんだ」\nって自分を責めて自信をなくす。\n\nたとえば\n誘いを断った→落ち込まれる→俺が悪い。\n返信が遅れた→不安がられる→俺が悪い。\n忙しい→拗ねられる→俺が悪い。\n\nこれ、男にとってマジで恐怖で\n相手が唯一無二の存在であるほど\nダメな俺だと感じると\nとんでもないダメージを受けるの。\n\nそれで、だんだんと\n「減点されないための仕事」になる。\n\nキツいよね。\n\n片思いで終わったり、\nセフレから本命になれなかったり\nあと、回避型男子に避けられるのも\nこれが原因のこと多いのよ。\n\nいっつも本命になる女の子はさ、\n「そうなんだー」「わかったー」\nみたいに、驚くほどさっぱりなのよ笑\n\nこうなるのは\n「私は愛されて当然だから〜」\nという姫マインドで生きてるから。\n\n愛されて当然〜だと\n誘いを断られても、なんとも思わないのよ。\n「まぁ、いっか、別の日に会えるよね」\nくらいの感覚。\n\nするとびっくり！男の中で何が起きるか。",
+    "counts": {
+      "likes": 118,
+      "replies": 1,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "74767155782",
+      "username": "aco.renai.mentor"
+    },
+    "url": "https://www.threads.com/@aco.renai.mentor/post/DYE0vJxCaCQ"
+  },
+  {
+    "pk": "3791648328686641523",
+    "code": "DSepBDgkiFz",
+    "taken_at": 1766219725,
+    "text": "正直に言うね。\n片思いで終わる子と、両思いになる子は\n“考え方”が真逆。\n\n【片思いで終わりやすい子】\n・「嫌われたらどうしよう」で動けない\n・返信速度で一喜一憂する\n・好かれようと頑張りすぎて重くなる\n・軸が「彼にどう思われるか」\n・心はずっと“評価される側”\n\n【両思いになる子】\n・「今は魅力を伝えるタイミング」と考える",
+    "counts": {
+      "likes": 179,
+      "replies": 2,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "76906130000",
+      "username": "coco._renai"
+    },
+    "url": "https://www.threads.com/@coco._renai/post/DSepBDgkiFz"
+  },
+  {
+    "pk": "3882985571573012062",
+    "code": "DXjIs3tk5Ze",
+    "taken_at": 1777107973,
+    "text": "これガチなんやけど。\nこれやるだけで片思いの【あの人】からLINEが来た。\n恋愛奥手で30年非リア、友達0やった私でもできた。あんたでもできるはず。\n\nこのやり方知っておきたい人おる？\nいいね30超えたら出すわ。",
+    "counts": {
+      "likes": 277,
+      "replies": 3,
+      "reposts": 1,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "45072194299",
+      "username": "bakusui.en"
+    },
+    "url": "https://www.threads.com/@bakusui.en/post/DXjIs3tk5Ze"
+  },
+  {
+    "pk": "3839545552397262014",
+    "code": "DVIzlZNkdy-",
+    "taken_at": 1771929519,
+    "text": "世の中の女性は、片思いの相手になんてライン送ってるん？\n急にご飯誘ったら、きもい？",
+    "counts": {
+      "likes": 416,
+      "replies": 13,
+      "reposts": 1,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": true,
+    "user": {
+      "pk": "70863077227",
+      "username": "hati3_1"
+    },
+    "url": "https://www.threads.com/@hati3_1/post/DVIzlZNkdy-"
+  },
+  {
+    "pk": "3539213062417184679",
+    "code": "DEdz4dZzHen",
+    "taken_at": 1736127096,
+    "text": "片思いの恋でした・・56歳の彼に25歳の彼女ができました・・\n恋愛に年齢は関係ないっていうけど私（56歳）としてはとてもとてもショックで・・\n毎日職場では彼の顔見るし・・おばさんでも辛すぎる！！\n何かアドバイスいただけると嬉しいです・・・",
+    "counts": {
+      "likes": 775,
+      "replies": 236,
+      "reposts": 2,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63397877127",
+      "username": "momo10peko"
+    },
+    "url": "https://www.threads.com/@momo10peko/post/DEdz4dZzHen"
+  },
+  {
+    "pk": "3782888293482982838",
+    "code": "DR_hNw-CW22",
+    "taken_at": 1765175447,
+    "text": "付き合ってないのに失恋するって、\n片思いの最大の地獄。",
+    "counts": {
+      "likes": 396,
+      "replies": 26,
+      "reposts": 4,
+      "quotes": 2,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "77342437716",
+      "username": "aipi_love_"
+    },
+    "url": "https://www.threads.com/@aipi_love_/post/DR_hNw-CW22"
+  },
+  {
+    "pk": "3896572262996277138",
+    "code": "DYTZ9QJiHeS",
+    "taken_at": 1778727632,
+    "text": "【両片思いの男女にだけ出る濃厚サイン】\n〜もうすでに両思いかもしれない7つの見抜き方〜",
+    "counts": {
+      "likes": 241,
+      "replies": 8,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "80499675853",
+      "username": "saki_cherish"
+    },
+    "url": "https://www.threads.com/@saki_cherish/post/DYTZ9QJiHeS"
+  },
+  {
+    "pk": "3676470469533976130",
+    "code": "DMFcmnLyUZC",
+    "taken_at": 1752489454,
+    "text": "片思いは最高の恋です。",
+    "counts": {
+      "likes": 763,
+      "replies": 5,
+      "reposts": 18,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": true,
+    "user": {
+      "pk": "63049861574",
+      "username": "kafuka022"
+    },
+    "url": "https://www.threads.com/@kafuka022/post/DMFcmnLyUZC"
+  },
+  {
+    "pk": "3897833041201164030",
+    "code": "DYX4n_Wk27-",
+    "taken_at": 1778877929,
+    "text": "今日仕事の関係で、\nずっと2年片思いしてる人に電話します！\n\n電話と言っても、\n会社の携帯にかけるので、\n個人の連絡先ではありませんが💦🥲\n\nそれで…自分の気持ちを伝えてみます🥺🥺\n\nフラれることは分かっているので、\n早くけじめをつけたいです🤣✨\n\n頑張ってきます🥳👍🏻❤️‍🔥❤️‍🔥\n\n皆さんパワーください🥺😂💗💗",
+    "counts": {
+      "likes": 2379,
+      "replies": 36,
+      "reposts": 0,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "70636662633",
+      "username": "iam_cleanwater.jp"
+    },
+    "url": "https://www.threads.com/@iam_cleanwater.jp/post/DYX4n_Wk27-"
+  },
+  {
+    "pk": "3355052780270310003",
+    "code": "C6PirpSstJz",
+    "taken_at": 1714173480,
+    "text": "高校生のときに１年間片思いしてた子に告白してる最中に大量の鼻血がでたことかな。 \n\nすっげードキドキしながら\n\n「あのさ、俺さ、入学してからずっと君のことがすらばぇ」\n\nってなってダラダラ流れてきた。\n\n 俺は恥ずかしさと情けなさで涙目になって\n\n「あ、いや、ゴメン、ゴメン…」\n\nてグダグタしてた。 \n\nもしＯＫされたら木陰から飛び出てくる予定だった友人達も\n\n「どーすんだどーすんだ」\n\nってザワザワしてた。 \n\nそしたらその子が… \n\n「鼻血と涙、どっちを先に拭きたい？」\n\nってハンカチ差し出してきた。\n\n 俺はまだ止まらない鼻血をダラダラ流しながら\n\n「えっ？」\n\nと言った。\n\n 次の言葉で今度は失禁しそうになった。\n\n 「私、○○君のこと好きだよ。そんな顔見せられても、変わらないよ。」って。\n\n 物凄い勢いで飛び出してきた友人達に胴上げされながら鼻血と涙を飛び散らせて喜んだ。\n\n それから８年、嫁となった彼女に今でもその話をされて恥ずかしいです。",
+    "counts": {
+      "likes": 6626,
+      "replies": 47,
+      "reposts": 60,
+      "quotes": 4,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63293064963",
+      "username": "daishukiholdings"
+    },
+    "url": "https://www.threads.com/@daishukiholdings/post/C6PirpSstJz"
+  },
+  {
+    "pk": "3904013164535769957",
+    "code": "DYt10nummtl",
+    "taken_at": 1779614657,
+    "text": "え、まってwwwフォロワー増えすぎてやばいw\nさっそく、うちをフォローした人から、\n\n・片思いの相手から食事に誘われた\n・離婚寸前だった夫婦がやり直せた\n・諦めてた志望校に子どもが受かった\n・毎月赤字だった家計が黒字になった\n・推しのライブのチケットが当たった\n\nそんな報告が、毎日のように届いてる。\nしかもな、みんな決まってこう言うねん。\n「占いとか興味ないけどなぜか澪音さんの投稿だけ目に止まって…」って。\n\nこの投稿が目に止まった時点で、もう繋がってるんやで。\nうちはそういうの、全部「必然」やと思ってる。\n\n気になったなら、それが答えやで。\n一人で抱えんでええからね🌿",
+    "counts": {
+      "likes": 41,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "75675537601",
+      "username": "reine.uranai"
+    },
+    "url": "https://www.threads.com/@reine.uranai/post/DYt10nummtl"
+  },
+  {
+    "pk": "3606208436067232162",
+    "code": "DIL03dRzemi",
+    "taken_at": 1744113567,
+    "text": "片思い世界\n1人で観に行っても大丈夫ですか？\n\n涙でボロボロになる系なら\nかなりやばいおばちゃんになる予感で心配…\n\nでも花ちゃんがみたい。",
+    "counts": {
+      "likes": 57,
+      "replies": 21,
+      "reposts": 0,
+      "quotes": 0,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "67536469790",
+      "username": "lanka_012"
+    },
+    "url": "https://www.threads.com/@lanka_012/post/DIL03dRzemi"
+  },
+  {
+    "pk": "3898233400042014772",
+    "code": "DYZTp-lEUg0",
+    "taken_at": 1778925655,
+    "text": "ぶっちゃけ、片思いの相手と結ばれるなんて誰でもできる。\n実はわい【30年恋人ナシ友達0の非リア】やったけど、同い年同じ誕生日の人と結婚っていうドラマみたいな引き寄せできた🙌\n\n恋愛奥手な人の片思いの悩みって、めちゃ多いやん？できれば1人ずつ相談乗りたいけど、それは無事完全キャパオーバーですw😂\nなので、\n\nわいが実際に1日５分で縁を引き寄せた\n⭐︎赤い糸夢結び術⭐︎\n\n↑これを投稿でわかりやすくガッツリ書いたら、興味ある？\n\nこの投稿が50いいね超えたら、頑張って書くわ🔥🔥🔥🏃‍➡️",
+    "counts": {
+      "likes": 104,
+      "replies": 2,
+      "reposts": 1,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "45072194299",
+      "username": "bakusui.en"
+    },
+    "url": "https://www.threads.com/@bakusui.en/post/DYZTp-lEUg0"
+  },
+  {
+    "pk": "3635914858142451549",
+    "code": "DJ1XUyxJUdd",
+    "taken_at": 1747654848,
+    "text": "いいな。私も女になって好きな人の喉仏を触ったり、かたくてしなやかな筋肉に頬をすりすりしたり、好きな人の俊敏な動きにうっとりしたりしたいな。女の人はいいな。好きな人に片思いできて。それは美しいから。男の片思いなんて、視界にも入れさせてもらえないくらい惨めだから。",
+    "counts": {
+      "likes": 849,
+      "replies": 33,
+      "reposts": 8,
+      "quotes": 3,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63420631032",
+      "username": "misiru_32"
+    },
+    "url": "https://www.threads.com/@misiru_32/post/DJ1XUyxJUdd"
+  },
+  {
+    "pk": "3807140179648586521",
+    "code": "DTVrdKCEiMZ",
+    "taken_at": 1768066497,
+    "text": "わたしは東京大神宮に参拝に行くと\n高確率で恋が終わる\n片思いでも付き合ってても。\n今回もそうだけど\n離れて正解だった相手ばかりだから\n神様が離してくれたのかも。\n今回の彼は3年半付き合ってたけど\n炊飯器を投げつける暴力で終わった。\nそしてほぼ毎回鍵のお守りが切れる。",
+    "counts": {
+      "likes": 1003,
+      "replies": 30,
+      "reposts": 9,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "64089412051",
+      "username": "___96ay"
+    },
+    "url": "https://www.threads.com/@___96ay/post/DTVrdKCEiMZ"
+  },
+  {
+    "pk": "3654735465317756479",
+    "code": "DK4OorGSW4_",
+    "taken_at": 1749898440,
+    "text": "片思いの恋は最高の恋です。\n\nその恋は叶わない恋かもしれない。\n届かなくて報われないかもしれない。\n\nそれでも心から好きだと思える人に\n出逢えたこと、\n心がふるえる一生に一度の恋。\n\nそんな恋をした自分を誇りに思っていい。\nそれは一生ものの大切な想いの結晶。\n\n純粋で、尊い、\nかけがえのない最高の恋です。",
+    "counts": {
+      "likes": 671,
+      "replies": 11,
+      "reposts": 14,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "63049861574",
+      "username": "kafuka022"
+    },
+    "url": "https://www.threads.com/@kafuka022/post/DK4OorGSW4_"
+  },
+  {
+    "pk": "3772972596808885057",
+    "code": "DRcSpY0E6NB",
+    "taken_at": 1763993404,
+    "text": "受け入れられないかもしれないけど、50代半ばで久しぶりに泣けるくらいの恋をしちゃいました…\nこんなに人を好きになれる力が残ってるなんて思ってなかった…\nこの文章打ってるだけでも涙が出てくる…\n誰にも言えないからここだけで呟いてもいいですか?!\n私の人生最後の片思い…\n見たくなければブロックしてください。今はメンタル弱ってるので、出来れば非難しないでください…🙇‍♀️",
+    "counts": {
+      "likes": 1728,
+      "replies": 243,
+      "reposts": 0,
+      "quotes": 1,
+      "views": null
+    },
+    "has_media": false,
+    "user": {
+      "pk": "78603865595",
+      "username": "teacher.1113"
+    },
+    "url": "https://www.threads.com/@teacher.1113/post/DRcSpY0E6NB"
+  }
+]

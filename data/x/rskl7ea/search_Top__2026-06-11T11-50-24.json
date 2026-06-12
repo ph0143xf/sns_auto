@@ -1,0 +1,67 @@
+{
+  "rawQuery": "浮気 別れ 恋愛 女性",
+  "product": "Top",
+  "sort": "likes",
+  "filters": {
+    "minFollowers": 0,
+    "minLikes": 3000,
+    "minViews": 0
+  },
+  "tweets": [
+    {
+      "id": "1959459008802419153",
+      "created_at": "Sun Aug 24 03:33:27 +0000 2025",
+      "text": "『1番の変態は1人の女性を浮気せずに抱き続ける男』ってマジでそうだな",
+      "is_long": false,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 141115,
+      "reply_count": 321,
+      "retweet_count": 4915,
+      "quote_count": 2099,
+      "bookmark_count": 12137,
+      "view_count": 31181868,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "1099975963511685120",
+        "screen_name": "sa_sadesu",
+        "name": "さぁさ",
+        "followers_count": 26896,
+        "following_count": 7,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    },
+    {
+      "id": "1902329759025250794",
+      "created_at": "Wed Mar 19 12:02:12 +0000 2025",
+      "text": "わたしはお付き合いする人や夫が、風俗やキャバクラに行くのNGなんですが、それは“浮気”だからNGなのではなく、風俗という女性の性をお金で買うこと、キャバクラのような表層的コミュニケーション（表層的色恋）を「楽しい」と思うセンスがムリムリの無理なので、その世界に縁がない人が恋愛対象となる。ただ不思議なことに「あなたは風俗やキャバクラが好きですか？」と聞かずとも、そういう世界に縁のない人としか恋仲にならないので、風俗やキャバクラが好きかどうかは、欲の強弱ではなく、価値観であり、センスなのだなと実感している。",
+      "is_long": true,
+      "lang": "ja",
+      "is_reply": false,
+      "is_retweet": false,
+      "is_quote": false,
+      "favorite_count": 22697,
+      "reply_count": 64,
+      "retweet_count": 1625,
+      "quote_count": 496,
+      "bookmark_count": 2722,
+      "view_count": 2135002,
+      "media": [],
+      "hashtags": [],
+      "user": {
+        "id": "4787624496",
+        "screen_name": "emaaarion",
+        "name": "エマちゃん",
+        "followers_count": 90360,
+        "following_count": 340,
+        "verified": false,
+        "is_blue_verified": true
+      }
+    }
+  ],
+  "users": []
+}

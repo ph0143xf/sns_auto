@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  /* ── Base ── */
+  --background: #ffffff;
+  --foreground: #111827;
+
+  /* ── Card / Surface ── */
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  /* ── Borders ── */
+  --border: #e5e7eb;
+  --border-subtle: #f3f4f6;
+
+  /* ── Inputs ── */
+  --input: #ffffff;
+  --input-border: #d1d5db;
+
+  /* ── Primary (indigo) ── */
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --primary-light: #eef2ff;
+
+  /* ── Secondary / Muted ── */
+  --secondary: #f9fafb;
+  --secondary-foreground: #374151;
+  --muted: #f9fafb;
+  --muted-foreground: #6b7280;
+  --accent: #f3f4f6;
+  --accent-foreground: #111827;
+
+  /* ── Status ── */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --success: #16a34a;
+  --warning: #d97706;
+
+  /* ── Ring ── */
+  --ring: #4f46e5;
+  --radius: 0.5rem;
+
+  /* ── Sidebar ── */
+  --sidebar-width: 224px;
+  --sidebar-bg: #fafafa;
+  --sidebar-border: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* iOSのバウンス時も背景色を統一 */
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* iOS Safariのタップハイライト無効化 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* モバイルでは選択しにくい小さなボタンを大きくする */
+@media (max-width: 767px) {
+  button, [role="button"], a {
+    -webkit-touch-callout: none;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #d1d5db; }
+
+textarea, input, select, button { font-family: inherit; }
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}

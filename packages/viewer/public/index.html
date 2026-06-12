@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNS Research Viewer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f1f5f9;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --muted: #94a3b8;
+    --accent: #6366f1;
+    --accent-soft: #6366f115;
+    --like: #f43f5e;
+    --view: #0284c7;
+    --rt: #059669;
+    --bookmark: #d97706;
+  }
+
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: flex; height: 100vh; overflow: hidden; }
+
+  /* Sidebar */
+  #sidebar { width: 260px; min-width: 260px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+  #sidebar-header { padding: 14px 16px 0; }
+  #sidebar-header h1 { font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: .05em; }
+
+  /* Platform tabs */
+  #platform-tabs { display: flex; padding: 10px 8px 0; gap: 4px; border-bottom: 1px solid var(--border); }
+  .ptab { flex: 1; text-align: center; padding: 6px 4px; border-radius: 6px 6px 0 0; font-size: 11px; font-weight: 600; cursor: pointer; border: 1px solid transparent; border-bottom: none; color: var(--muted); background: none; transition: all .15s; white-space: nowrap; }
+  .ptab:hover { color: var(--text); background: var(--bg); }
+  .ptab.active { color: var(--accent); background: var(--bg); border-color: var(--border); margin-bottom: -1px; padding-bottom: 7px; }
+  #file-list { overflow-y: auto; flex: 1; padding: 8px; }
+  .file-item { padding: 10px 12px; border-radius: 8px; cursor: pointer; margin-bottom: 4px; border: 1px solid transparent; transition: all .15s; }
+  .file-item:hover { background: var(--accent-soft); border-color: var(--accent); }
+  .file-item.active { background: var(--accent-soft); border-color: var(--accent); }
+  .file-name { font-size: 12px; font-weight: 600; word-break: break-all; line-height: 1.4; }
+  .file-meta { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+  /* Main */
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  /* Toolbar */
+  #toolbar { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: var(--surface); }
+  #file-title { font-size: 13px; font-weight: 600; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #post-count { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  select, input[type=text] { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 5px 10px; font-size: 12px; outline: none; }
+  select:focus, input:focus { border-color: var(--accent); }
+
+  /* Cards */
+  #cards { flex: 1; overflow-y: auto; padding: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 12px; align-content: start; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 10px; transition: border-color .15s; }
+  .card:hover { border-color: #3a3d4a; }
+
+  .card-header { display: flex; align-items: center; gap: 8px; }
+  .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #fff; flex-shrink: 0; }
+  .card-user { flex: 1; min-width: 0; }
+  .card-name { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-screen { font-size: 11px; color: var(--muted); }
+  .card-date { font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+  .card-text { font-size: 13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; word-break: break-word; max-height: 120px; overflow: hidden; position: relative; }
+  .card-text.expanded { max-height: none; }
+  .card-text::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 24px; background: linear-gradient(transparent, var(--surface)); pointer-events: none; }
+  .card-text.expanded::after { display: none; }
+  .card-text::after { background: linear-gradient(transparent, var(--surface)); }
+
+  .expand-btn { font-size: 11px; color: var(--accent); cursor: pointer; background: none; border: none; padding: 0; }
+
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge { font-size: 10px; padding: 2px 7px; border-radius: 100px; font-weight: 600; }
+  .badge-reply { background: #f1f5f9; color: #64748b; }
+  .badge-rt { background: #dcfce7; color: #059669; }
+  .badge-quote { background: #ede9fe; color: #7c3aed; }
+
+  .btn-sheets { display: flex; align-items: center; gap: 5px; background: #1a73e8; color: #fff; border: none; border-radius: 6px; padding: 5px 12px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+  .btn-sheets:hover { background: #1557b0; }
+  .btn-sheets:disabled { background: var(--muted); cursor: not-allowed; }
+
+  .metrics { display: flex; gap: 12px; }
+  .metric { display: flex; align-items: center; gap: 4px; font-size: 12px; }
+  .metric-val { font-weight: 700; }
+  .m-like { color: var(--like); }
+  .m-view { color: var(--view); }
+  .m-rt   { color: var(--rt); }
+  .m-bk   { color: var(--bookmark); }
+  .m-imp  { color: #7c3aed; }
+  .m-new  { color: #059669; }
+
+  .card-link { font-size: 11px; color: var(--accent); text-decoration: none; }
+  .card-link:hover { text-decoration: underline; }
+
+  /* Insights bar */
+  .insight-bar-wrap { display: flex; flex-direction: column; gap: 3px; }
+  .insight-bar-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); }
+  .insight-bar { height: 6px; border-radius: 3px; background: var(--bg); overflow: hidden; display: flex; }
+  .insight-bar-foll { background: #6366f1; height: 100%; }
+  .insight-bar-nonfoll { background: #e2e8f0; height: 100%; }
+  .insight-new-follows { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; color: #059669; background: #dcfce7; padding: 2px 8px; border-radius: 100px; }
+  .insight-badges { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+
+  /* Reel thumbnail */
+  .reel-thumb { width: 100%; aspect-ratio: 9/16; max-height: 220px; object-fit: cover; border-radius: 8px; background: var(--bg); display: block; }
+  .reel-badge { font-size: 10px; padding: 2px 7px; border-radius: 100px; font-weight: 600; background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+  .transcript-box { background: var(--bg); border-radius: 8px; padding: 10px 12px; font-size: 12px; line-height: 1.7; color: #334155; border-left: 3px solid #e879f9; }
+  .transcript-label { font-size: 10px; font-weight: 700; color: #a21caf; margin-bottom: 4px; letter-spacing: .05em; }
+  .tag-badge { font-size: 10px; color: #0284c7; background: #e0f2fe; padding: 2px 7px; border-radius: 100px; font-weight: 600; }
+
+  /* Empty / loading */
+  #empty { display: flex; align-items: center; justify-content: center; flex: 1; color: var(--muted); font-size: 14px; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div id="sidebar-header">
+    <h1>SNS Research</h1>
+  </div>
+  <div id="platform-tabs">
+    <button class="ptab active" data-platform="x">𝕏</button>
+    <button class="ptab" data-platform="threads">Threads</button>
+    <button class="ptab" data-platform="instagram">IG</button>
+    <button class="ptab" data-platform="note">note</button>
+  </div>
+  <div id="file-list"></div>
+</div>
+
+<div id="main">
+  <div id="toolbar">
+    <span id="file-title" style="color:var(--muted)">ファイルを選択してください</span>
+    <span id="post-count"></span>
+    <input type="text" id="search-input" placeholder="テキスト検索..." style="width:160px">
+    <select id="account-filter"><option value="">すべてのアカウント</option></select>
+    <select id="sort-select">
+      <option value="default">デフォルト順</option>
+      <option value="likes">❤ いいね順</option>
+      <option value="impressions">👁 インプ順</option>
+      <option value="new_follows">➕ 新フォロワー順</option>
+      <option value="views">👁 閲覧数順</option>
+      <option value="rt">🔁 RT順</option>
+      <option value="recent">🕐 新着順</option>
+    </select>
+    <button class="btn-sheets" id="download-btn" onclick="downloadCSV()" disabled>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Sheetsで開く
+    </button>
+  </div>
+  <div id="cards"><div id="empty">← ファイルを選択してください</div></div>
+</div>
+
+<script>
+let allTweets = [];
+let currentPlatform = 'x';
+
+// プラットフォームタブ
+document.querySelectorAll('.ptab').forEach(tab => {
+  tab.onclick = () => {
+    document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentPlatform = tab.dataset.platform;
+    allTweets = [];
+    document.getElementById('file-title').textContent = 'ファイルを選択してください';
+    document.getElementById('file-title').style.color = 'var(--muted)';
+    document.getElementById('post-count').textContent = '';
+    document.getElementById('download-btn').disabled = true;
+    document.getElementById('cards').innerHTML = '<div id="empty">← ファイルを選択してください</div>';
+    loadFiles();
+  };
+});
+
+// ファイル一覧読み込み
+async function loadFiles() {
+  const res = await fetch(`/api/files?platform=${currentPlatform}`);
+  const files = await res.json();
+  const list = document.getElementById('file-list');
+  list.innerHTML = '';
+  files.forEach(f => {
+    const el = document.createElement('div');
+    el.className = 'file-item';
+    const kb = (f.size / 1024).toFixed(1);
+    const date = new Date(f.mtime).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+    el.innerHTML = `<div class="file-name">${f.name.replace('.json','')}</div><div class="file-meta">${date} · ${kb} KB</div>`;
+    el.onclick = () => { document.querySelectorAll('.file-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); loadFile(f.name, f.platform); };
+    list.appendChild(el);
+  });
+}
+
+async function loadFile(name, platform) {
+  platform = platform || currentPlatform;
+  document.getElementById('file-title').textContent = name.replace('.json','');
+  document.getElementById('file-title').style.color = 'var(--text)';
+  document.getElementById('cards').innerHTML = '<div id="empty">読み込み中...</div>';
+  const res = await fetch(`/api/file?platform=${platform}&name=${encodeURIComponent(name)}`);
+  const data = await res.json();
+
+  const raw = Array.isArray(data) ? data : (data.tweets || []);
+  // インサイトデータ検出 (impressionsフィールドがあればinsights)
+  const isInsights = raw.length > 0 && raw[0].impressions !== undefined && raw[0].pk !== undefined && raw[0].text !== undefined && !raw[0].counts;
+  allTweets = raw.map(t => normalize(t, isInsights ? 'threads_insights' : platform));
+
+  const accounts = [...new Set(allTweets.map(t => t._account).filter(Boolean))];
+  const sel = document.getElementById('account-filter');
+  sel.innerHTML = '<option value="">すべてのアカウント</option>';
+  accounts.forEach(a => { const o = document.createElement('option'); o.value = a; o.textContent = '@' + a; sel.appendChild(o); });
+
+  render();
+}
+
+function render() {
+  const tweets = getFilteredTweets();
+
+  document.getElementById('post-count').textContent = `${tweets.length} 件`;
+  document.getElementById('download-btn').disabled = false;
+  const container = document.getElementById('cards');
+  container.innerHTML = '';
+
+  if (!tweets.length) { container.innerHTML = '<div id="empty">該当する投稿がありません</div>'; return; }
+
+  tweets.forEach(t => container.appendChild(makeCard(t)));
+}
+
+function normalize(t, platform) {
+  // Threads insights
+  if (platform === 'threads_insights') {
+    const screen = t.username || 'uwaki_happy';
+    return {
+      _platform: 'threads_insights',
+      _account: screen,
+      _id: t.pk,
+      _date: t.taken_at ? new Date(t.taken_at * 1000).toISOString() : null,
+      _url: `https://www.threads.com/@${screen}/post/${t.code}`,
+      _likes: t.likes || 0,
+      _views: 0,
+      _reposts: t.reposts || 0,
+      _replies: t.replies || 0,
+      _bookmarks: 0,
+      _impressions: t.impressions || 0,
+      _from_followers: t.from_followers || 0,
+      _from_non_followers: t.from_non_followers || 0,
+      _new_follows: t.new_follows || 0,
+      text: t.text || '',
+      user: { name: screen, screen_name: screen },
+    };
+  }
+  // Instagram reels
+  if (platform === 'instagram' || t.source_tag != null || t.transcript != null) {
+    const screen = t.user?.username || '';
+    return {
+      _platform: 'instagram',
+      _account: screen,
+      _id: t.pk || t.code,
+      _date: t.date || (t.taken_at ? new Date(t.taken_at * 1000).toISOString() : null),
+      _url: t.url || `https://www.instagram.com/reel/${t.code}/`,
+      _likes: t.counts?.likes || 0,
+      _views: t.counts?.views || 0,
+      _reposts: 0,
+      _replies: t.counts?.comments || 0,
+      _bookmarks: 0,
+      text: t.caption || '',
+      user: { name: screen, screen_name: screen, followers_count: null },
+      _thumbnail: t.thumbnail,
+      _transcript: t.transcript,
+      _source_tag: t.source_tag,
+    };
+  }
+  if (platform === 'threads' || t.pk) {
+    const screen = t.user?.username || '';
+    return {
+      _platform: 'threads',
+      _account: screen,
+      _id: t.pk,
+      _date: t.taken_at ? new Date(t.taken_at * 1000).toISOString() : null,
+      _url: t.url || `https://www.threads.com/@${screen}/post/${t.code}`,
+      _likes: t.counts?.likes || 0,
+      _views: t.counts?.views || 0,
+      _reposts: t.counts?.reposts || 0,
+      _replies: t.counts?.replies || 0,
+      _bookmarks: 0,
+      text: t.text || '',
+      user: { name: screen, screen_name: screen, followers_count: null },
+    };
+  }
+  // X
+  const screen = t.user?.screen_name || '';
+  return {
+    _platform: 'x',
+    _account: screen,
+    _id: t.id,
+    _date: t.created_at || null,
+    _url: `https://x.com/${screen}/status/${t.id}`,
+    _likes: t.favorite_count || 0,
+    _views: t.view_count || 0,
+    _reposts: t.retweet_count || 0,
+    _replies: t.reply_count || 0,
+    _bookmarks: t.bookmark_count || 0,
+    _isRT: t.is_retweet,
+    _isReply: t.is_reply,
+    _isQuote: t.is_quote,
+    text: t.text || '',
+    user: { name: t.user?.name || screen, screen_name: screen, followers_count: t.user?.followers_count || null },
+  };
+}
+
+function fmt(n) {
+  if (n >= 10000) return (n/10000).toFixed(1) + 'w';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'k';
+  return String(n);
+}
+
+const COLORS = ['#6366f1','#f43f5e','#34d399','#fbbf24','#38bdf8','#a78bfa','#fb923c'];
+function avatarColor(name) { let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) % COLORS.length; return COLORS[h]; }
+
+function makeCard(t) {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const screen = t._account || '?';
+  const name = t.user?.name || screen;
+  const date = t._date ? new Date(t._date).toLocaleString('ja-JP', { month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
+  const color = avatarColor(screen);
+  const domId = 'ct-' + String(t._id).replace(/\W/g,'');
+
+  // Threads Insights カード
+  if (t._platform === 'threads_insights') {
+    const screen = t._account || 'uwaki_happy';
+    const date = t._date ? new Date(t._date).toLocaleString('ja-JP', { month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit' }) : '';
+    const color = avatarColor(screen);
+    const domId = 'ct-' + String(t._id).replace(/\W/g,'');
+    const text = (t.text || '').trim();
+    const isLong = text.length > 140;
+    const totalImp = t._impressions;
+    const follPct = totalImp > 0 ? Math.round(t._from_followers / totalImp * 100) : 0;
+    const nonFollPct = 100 - follPct;
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="avatar" style="background:${color}">${screen.slice(0,1).toUpperCase()}</div>
+        <div class="card-user">
+          <div class="card-name">@${esc(screen)}</div>
+          <div class="card-screen">${date}</div>
+        </div>
+        ${t._new_follows > 0 ? `<div class="insight-new-follows">+${t._new_follows} フォロワー</div>` : ''}
+      </div>
+      <div class="card-text${isLong ? '' : ' expanded'}" id="${domId}">${esc(text)}</div>
+      ${isLong ? `<button class="expand-btn" onclick="toggleExpand('${domId}',this)">続きを見る</button>` : ''}
+      <div class="metrics">
+        <div class="metric m-imp"><span>👁</span><span class="metric-val">${fmt(t._impressions)}</span><span style="font-size:10px;color:var(--muted)">インプ</span></div>
+        <div class="metric m-like"><span>❤</span><span class="metric-val">${fmt(t._likes)}</span></div>
+        <div class="metric m-rt"><span>💬</span><span class="metric-val">${fmt(t._replies)}</span></div>
+        <div class="metric m-rt"><span>🔁</span><span class="metric-val">${fmt(t._reposts)}</span></div>
+      </div>
+      <div class="insight-bar-wrap">
+        <div class="insight-bar-label">
+          <span style="color:#6366f1">フォロワー ${follPct}% (${fmt(t._from_followers)})</span>
+          <span>非フォロワー ${nonFollPct}% (${fmt(t._from_non_followers)})</span>
+        </div>
+        <div class="insight-bar">
+          <div class="insight-bar-foll" style="width:${follPct}%"></div>
+          <div class="insight-bar-nonfoll" style="width:${nonFollPct}%"></div>
+        </div>
+      </div>
+      <a class="card-link" href="${t._url}" target="_blank">→ Threadsで開く</a>
+    `;
+    return card;
+  }
+
+  // Instagram Reel 専用カード
+  if (t._platform === 'instagram') {
+    const caption = (t.text || '').replace(/https?:\/\/\S+/g,'').trim();
+    const isLong = caption.length > 100;
+    const transcriptText = t._transcript ? esc(t._transcript) : null;
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="avatar" style="background:${color}">${name.slice(0,1)}</div>
+        <div class="card-user">
+          <div class="card-name">${esc(name)}</div>
+          <div class="card-screen">@${esc(screen)}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <span class="reel-badge">Reel</span>
+          <div class="card-date">${date}</div>
+        </div>
+      </div>
+      ${t._thumbnail ? `<img class="reel-thumb" src="${esc(t._thumbnail)}" loading="lazy" onerror="this.style.display='none'" alt="thumbnail">` : ''}
+      ${t._source_tag ? `<div><span class="tag-badge">#${esc(t._source_tag)}</span></div>` : ''}
+      ${caption ? `<div class="card-text${isLong?'':' expanded'}" id="${domId}">${esc(caption)}</div>` : ''}
+      ${isLong ? `<button class="expand-btn" onclick="toggleExpand('${domId}',this)">続きを見る</button>` : ''}
+      ${transcriptText ? `<div><div class="transcript-label">🎙 音声文字起こし</div><div class="transcript-box">${transcriptText}</div></div>` : ''}
+      <div class="metrics">
+        <div class="metric m-view"><span>▶</span><span class="metric-val">${fmt(t._views)}</span></div>
+        <div class="metric m-like"><span>❤</span><span class="metric-val">${fmt(t._likes)}</span></div>
+        <div class="metric m-rt"><span>💬</span><span class="metric-val">${fmt(t._replies)}</span></div>
+      </div>
+      <a class="card-link" href="${t._url}" target="_blank">→ Instagramで開く</a>
+    `;
+    return card;
+  }
+
+  const badges = [];
+  if (t._isRT)    badges.push('<span class="badge badge-rt">RT</span>');
+  if (t._isReply) badges.push('<span class="badge badge-reply">返信</span>');
+  if (t._isQuote) badges.push('<span class="badge badge-quote">引用</span>');
+  if (t._platform === 'threads') badges.push('<span class="badge" style="background:#f0ebff;color:#7c3aed">Threads</span>');
+
+  const text = (t.text || '').replace(/https?:\/\/\S+/g, '').trim();
+  const isLong = text.length > 140;
+  const linkLabel = t._platform === 'threads' ? '→ Threadsで開く' : '→ 投稿を開く';
+
+  card.innerHTML = `
+    <div class="card-header">
+      <div class="avatar" style="background:${color}">${name.slice(0,1)}</div>
+      <div class="card-user">
+        <div class="card-name">${esc(name)}</div>
+        <div class="card-screen">@${esc(screen)}${t.user?.followers_count ? ' · ' + fmt(t.user.followers_count) + 'F' : ''}</div>
+      </div>
+      <div class="card-date">${date}</div>
+    </div>
+    ${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}
+    <div class="card-text${isLong ? '' : ' expanded'}" id="${domId}">${esc(text)}</div>
+    ${isLong ? `<button class="expand-btn" onclick="toggleExpand('${domId}',this)">続きを見る</button>` : ''}
+    <div class="metrics">
+      <div class="metric m-like"><span>❤</span><span class="metric-val">${fmt(t._likes)}</span></div>
+      <div class="metric m-view"><span>👁</span><span class="metric-val">${fmt(t._views)}</span></div>
+      <div class="metric m-rt"><span>🔁</span><span class="metric-val">${fmt(t._reposts)}</span></div>
+      ${t._bookmarks ? `<div class="metric m-bk"><span>🔖</span><span class="metric-val">${fmt(t._bookmarks)}</span></div>` : ''}
+    </div>
+    <a class="card-link" href="${t._url}" target="_blank">${linkLabel}</a>
+  `;
+  return card;
+}
+
+function toggleExpand(id, btn) {
+  const el = document.getElementById(id);
+  el.classList.toggle('expanded');
+  btn.textContent = el.classList.contains('expanded') ? '閉じる' : '続きを見る';
+}
+
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function getFilteredTweets() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const acct = document.getElementById('account-filter').value;
+  const sort = document.getElementById('sort-select').value;
+  let tweets = allTweets.filter(t => {
+    if (acct && t._account !== acct) return false;
+    if (q && !(t.text||'').toLowerCase().includes(q)) return false;
+    return true;
+  });
+  if (sort === 'likes') tweets.sort((a,b) => b._likes - a._likes);
+  else if (sort === 'impressions') tweets.sort((a,b) => (b._impressions||0) - (a._impressions||0));
+  else if (sort === 'new_follows') tweets.sort((a,b) => (b._new_follows||0) - (a._new_follows||0));
+  else if (sort === 'views') tweets.sort((a,b) => b._views - a._views);
+  else if (sort === 'rt') tweets.sort((a,b) => b._reposts - a._reposts);
+  else if (sort === 'recent') tweets.sort((a,b) => new Date(b._date) - new Date(a._date));
+  return tweets;
+}
+
+function downloadCSV() {
+  const tweets = getFilteredTweets();
+  if (!tweets.length) return;
+
+  function csvCell(v) {
+    const s = String(v ?? '');
+    return (s.includes(',') || s.includes('"') || s.includes('\n')) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+
+  const rows = tweets.map(t => [
+    t._platform || '',
+    t._account,
+    t.user?.name || '',
+    t._date ? new Date(t._date).toLocaleString('ja-JP') : '',
+    t.text || '',
+    t._likes,
+    t._replies,
+    t._reposts,
+    t._views,
+    t._bookmarks || 0,
+    t._url || '',
+  ].map(csvCell).join(','));
+  const headers = ['platform','account','name','created_at','text','likes','replies','reposts','views','bookmarks','url'];
+
+  const csv = '﻿' + [headers.join(','), ...rows].join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (document.getElementById('file-title').textContent || 'data') + '.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById('sort-select').onchange = render;
+document.getElementById('account-filter').onchange = render;
+document.getElementById('search-input').oninput = render;
+
+loadFiles();
+</script>
+</body>
+</html>
