@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-better-sqlite3": "^7.8.0",
+    "@prisma/adapter-neon": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@radix-ui/react-avatar": "^1.1.12",
     "@radix-ui/react-checkbox": "^1.3.4",
